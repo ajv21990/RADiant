@@ -1,0 +1,22 @@
+.logo{
+    width: auto;
+    height: 90px;
+    margin-left: -20px;
+}
+img{
+    padding-bottom: 20px
+}
+.progress{
+    width: 40%;
+}
+
+.reward_header{
+    text-align: center;
+    color: #3e6a97;
+
+}
+.rewards_container{
+    padding-top: 5%
+}
+
+
