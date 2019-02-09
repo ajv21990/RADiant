@@ -3,6 +3,7 @@ import GoogleMaps from '../components/googleMaps'
 import Header from '../constants/header'
 import ZagApi from '../Axios/API/zagsterAPI'
 import Footer from '../constants/footer'
+import { InfoWindow } from 'react-google-maps'
 
 
 export default class LandingPage extends React.Component {
@@ -11,10 +12,8 @@ export default class LandingPage extends React.Component {
             lat: 33.783022
             , lng: -118.112858
         },
-        // markers: {
-        //     lat: null,
-        //     lng: null
-        // }
+        markers: [],
+        labels: "label"
 
     }
     componentDidMount = () => {
@@ -50,9 +49,16 @@ export default class LandingPage extends React.Component {
 
     ZagSuccess = resp => {
         console.log("Success Get", resp)
-        this.setState({
-            players: resp.data.items
-        })
+
+        for (let i = 0; i < resp.data.features.length; i++) {
+            // this.setState({
+            //     markers: resp.data.features[i].geometry.coordinates
+            // })
+            this.state.markers.push(resp.data.features[i].geometry.coordinates)
+        }
+
+
+        console.log("markers state", this.state.markers)
     }
 
     rewards = () => {
@@ -77,7 +83,9 @@ export default class LandingPage extends React.Component {
                     loadingElement={<div style={{ height: `100%` }} />}
                     containerElement={<div style={{ height: `700px` }} />}
                     mapElement={<div style={{ height: `100%` }} />}
-                // markers={this.state.markers}
+                    markers={this.state.markers}
+                    MarkerLabel={this.state.labels}
+
                 />
                 <Footer handleClick={this.rewards} />
             </div>
