@@ -13,6 +13,7 @@ const Navagation = () => (
             <Route exact path="/register" component={Register} />
             <Route exact path="/landing" component={LandingPage} />
             <Route exact path="/rewards" component={Rewards} />
+
         </div>
     </Router>
 )
