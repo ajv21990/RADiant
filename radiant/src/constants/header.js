@@ -9,30 +9,15 @@ import Lyft from "../images/Lyft.png";
 import { defaultProps } from "recompose";
 
 const LandingPage = props => (
-  <div className="header">
+  <div className="header col-md-12">
     <div className="row">
-      <Link to="/landing">
-        <img src={logo} alt="Long Beach" className="logo" />
-      </Link>
-      <div className="row">
-        <ul>
-          <a href="#" className="headerLink">
-            <span onClick={props.handleClickScooters}>Scooters</span>
-          </a>
-          <a href="#" className="headerLink">
-            <span onClick={props.handleClick}>Bikes</span>
-          </a>
-          <a href="#" className="headerLink">
-            Public Transit
-          </a>
-          <a href="#" className="headerLink">
-            <img src={Uber} alt="Long Beach" className="logo" />
-            <img src={Lyft} alt="Long Beach" className="logo ml-1" />
-          </a>
-          <a href="#" className="headerLink">
-            Rent-a-Car
-          </a>
-        </ul>
+      <div className="col-md-3">
+        <Link to="/landing">
+          <img src={logo} alt="Long Beach" className="logo" />
+        </Link>
+      </div>
+      <div className="col-md-5 test">
+        <p>Connect to people and places that matter most</p>
       </div>
     </div>
   </div>

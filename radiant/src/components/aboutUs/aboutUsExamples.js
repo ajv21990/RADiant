@@ -3,10 +3,13 @@ import React, { Component } from "react";
 class AboutUsExamples extends Component {
   render() {
     return (
-      <div className="col-md-12">
-        <h2 className="offset-3">
-          All of these services are already available in your city!
-        </h2>
+      <div
+        className="col-md-12"
+        style={{
+          textAlign: "center"
+        }}
+      >
+        <h2>All of these services are already available in your city!</h2>
         <br />
         <div className="">
           <iframe

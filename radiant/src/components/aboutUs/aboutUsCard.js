@@ -24,8 +24,9 @@ class AboutUsCard extends Component {
               -Connect to people and places that matter most-
               <br />
               -Strengthen the community through urban transportation-
+              <br />
+              -Strengthen the community through urban transportation-
             </CardText>
-            <Button>button</Button>
           </CardBody>
           <CardFooter />
         </Card>

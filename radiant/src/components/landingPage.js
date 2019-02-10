@@ -2,8 +2,6 @@ import React from "react";
 import GoogleMaps from "../components/googleMaps";
 import Header from "../constants/header";
 import ZagApi from "../Axios/API/zagsterAPI";
-import Footer from "../constants/footer";
-import { InfoWindow } from "react-google-maps";
 import NavBar from "./navBar";
 
 export default class LandingPage extends React.Component {
@@ -48,9 +46,6 @@ export default class LandingPage extends React.Component {
     console.log("Success Get", resp);
 
     for (let i = 0; i < resp.data.features.length; i++) {
-      // this.setState({
-      //     markers: resp.data.features[i].geometry.coordinates
-      // })
       this.state.markers.push(resp.data.features[i].geometry.coordinates);
     }
 
@@ -79,7 +74,6 @@ export default class LandingPage extends React.Component {
           markers={this.state.markers}
           MarkerLabel={this.state.labels}
         />
-        <Footer handleClick={this.rewards} />
       </div>
     );
   }
