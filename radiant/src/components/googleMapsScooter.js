@@ -1,4 +1,3 @@
-
 import React from "react";
 import {
   GoogleMap,
@@ -32,3 +31,4 @@ class GoogleMapsScooter extends React.Component {
 }
 
 export default withScriptjs(withGoogleMap(GoogleMapsScooter));
+
