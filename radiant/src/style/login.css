@@ -1,23 +1,32 @@
-.background_login {
-  background: url("../images/lbc.jpg") no-repeat center center fixed;
+#background_login {
+  background: url("../images/lbc.jpg") no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover ;
+  padding: 17%;
 }
+
+#background_login .logoDiv {
+  height: 300px;
+}
+
+#background_login .formDiv {
+  height: 550px;
+}
+
 .login_title {
-  padding-left: 40%;
   color: #3e6a97;
+  text-align: center;
 }
+
 .login_container {
   background-color: rgba(255, 177, 8, 0.74);
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #3e6a97;
+  padding: 50px 20px;
+  color: #2a4c6e;
 }
+
 .registration {
-  font-size: 150%;
+  font-size: 22px;
   font-weight: 500;
 }

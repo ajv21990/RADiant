@@ -2,6 +2,7 @@ import React from "react";
 import TextInput from "../constants/textInput";
 import "../style/login.css";
 import { NavLink } from "reactstrap";
+import lbc from '../images/lbc.jpg';
 
 export default class Login extends React.Component {
   constructor(props) {
@@ -24,33 +25,46 @@ export default class Login extends React.Component {
 
   render() {
     return (
-      <div className="background_login" style={{ padding: "17%" }}>
-        <div>
-          <h1 className="mb-4 login_title">RADiant</h1>
-          <div className="col-md-4 border rounded mx-auto login_container registration">
-            <TextInput
-              label="Email"
-              id="email"
-              type="email"
-              val={this.state.email}
-              handleChange={this.handleChange}
-            />
-            <TextInput
-              label="Password"
-              id="password"
-              type="password"
-              val={this.state.password}
-              handleChange={this.handleChange}
-            />
-            <button className=" btn btn-light mr-2 mt-3">
-              <NavLink href="/home/">Login</NavLink>
-            </button>
-            <button className=" btn btn-light ml-2 mt-3">
-              <NavLink href="/register/">Sign up</NavLink>
-            </button>
+      <div className="container-fluid p-0" id="background_login">
+        <br />
+        <div className="row">
+          <div className="col-md-4 my-5 logoDiv">
+            <h1 className="login_title">RADiant</h1>
+          </div>
+        </div>
+        <br />
+        <div className="row">
+          <div className="col-md-4 formDiv">
+            <form className="rounded m-auto login_container registration">
+              <TextInput
+                label="Email"
+                id="email"
+                type="email"
+                val={this.state.email}
+                handleChange={this.handleChange}
+                placeholder="Enter email address"
+                />
+              <TextInput
+                label="Password"
+                id="password"
+                type="password"
+                val={this.state.password}
+                handleChange={this.handleChange}
+                placeholder="Enter password"
+                />
+              <div className="row">
+                <button className="btn btn-sm m-2 btn-primary btn-block">
+                  <NavLink className="text-warning" href="/home/"><strong>Login</strong></NavLink>
+                </button>
+                <button className="btn btn-sm m-2 btn-primary btn-block">
+                  <NavLink className="text-warning" href="/register/"><strong>Sign up</strong></NavLink>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
+
     );
   }
 }
