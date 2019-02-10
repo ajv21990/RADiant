@@ -8,9 +8,8 @@ import AboutUsCard from "./aboutUsCard";
 class AboutUs extends Component {
   render() {
     return (
-      <div className="background-aboutUs col-md-12">
+      <div className="background-aboutUs">
         <NavBar />
-        coopers navigation bar will go here
         <div className="aboutUs">
           <div className="aboutUs-card offset-5 col-md-2 mt-3 mb-3">
             <h1>About Us</h1>
@@ -35,7 +34,12 @@ class AboutUs extends Component {
               <AboutUsCard />
             </div>
           </div>
-          <div className="col-md-11 offset-1">
+          <div
+            className="col-md-12"
+            style={{
+              textAlign: "center"
+            }}
+          >
             <h2>
               RADiant exists to bring any ride sharing vehicle closer to your
               fingertips
@@ -43,12 +47,16 @@ class AboutUs extends Component {
             <br />
             <br />
           </div>
-          <div className="col-md-12">
+          <div
+            className="col-md-12"
+            style={{
+              textAlign: "center"
+            }}
+          >
             <h3>
               Whether you're going down the street or across the city, there are
               plenty of ways to get around without having to own anything!
             </h3>
-            <br />
           </div>
           <br />
           <br />
@@ -64,9 +72,10 @@ class AboutUs extends Component {
               needed awareness to the possibilities surrounding creative ways of
               public transportation in order to decrease congestion and reduce
               pollution. We are in no way suggesting that users need to get rid
-              of their cars. <br />
+              of their cars though as they have proven to be very beneficial.
               <br />
-              In fact, according to a 2018 study for the average American (who
+              <br />
+              {/* In fact, according to a 2018 study for the average American (who
               drives around 13,000 miles per year), owning a motor vehicle will
               cost them $12,744 per year to maintain, and the cost of taking
               UberX everywhere will cost them $18,115 per year. However,
@@ -77,7 +86,7 @@ class AboutUs extends Component {
               <br />
               Uber tends to be somewhat costly and is a good alternative to
               driving, however even more options exist within the city at this
-              time to travel within a wide variety of distances.
+              time to travel within a wide variety of distances. */}
             </h4>
           </div>
         </div>
