@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { GoogleMap, Marker, withGoogleMap, withScriptjs, InfoWindow, Circle } from 'react-google-maps';
+import { GoogleMap, Marker, withGoogleMap, withScriptjs, InfoWindow } from 'react-google-maps';
 
 class GoogleMaps extends React.Component {
     render() {
