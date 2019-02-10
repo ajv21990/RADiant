@@ -12,7 +12,6 @@ import {
   DropdownMenu,
   DropdownItem
 } from "reactstrap";
-// import "./navbar.css";
 
 export default class NavBar extends React.Component {
   constructor(props) {
@@ -32,7 +31,7 @@ export default class NavBar extends React.Component {
     return (
       <div>
         <Navbar
-          className="bg-primary"
+          // className="bg-primary"
           style={{
             backgroundColor: "#0d1731",
             color: "#0066ff",
@@ -56,7 +55,7 @@ export default class NavBar extends React.Component {
                 <NavLink href="/services/">Services</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/next/">What's Next</NavLink>
+                <NavLink href="/upcoming/">What's Next</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>

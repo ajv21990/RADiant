@@ -2,11 +2,6 @@ import React from "react";
 import "../style/header.css";
 import { Link } from "react-router-dom";
 import logo from "../images/LBC_Logo.png";
-import lime from "../images/lime.png";
-import bird from "../images/bird-logo.png";
-import Uber from "../images/Uber.png";
-import Lyft from "../images/Lyft.png";
-import { defaultProps } from "recompose";
 
 const LandingPage = props => (
   <div className="header col-md-12">

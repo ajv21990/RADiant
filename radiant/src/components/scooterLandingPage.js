@@ -12,13 +12,11 @@ export default class ScooterLandingPage extends React.Component {
     },
     scooterMarker: [],
     isOpen: false,
-    openInfoWindowMarkerId: ''
+    openInfoWindowMarkerId: ""
   };
   componentDidMount = () => {
     this.startLocation();
-    this.getAllScooterLocations()
-
-
+    this.getAllScooterLocations();
   };
 
   startLocation = () => {
@@ -53,28 +51,29 @@ export default class ScooterLandingPage extends React.Component {
   onGetScooterSuccess = resp => {
     console.log("Success Get scooters", resp);
 
-    let arraycoord = []
+    let arraycoord = [];
 
     for (let i = 0; i < resp.data.birds.length; i++) {
-      arraycoord = [resp.data.birds[i].location.longitude, resp.data.birds[i].location.latitude]
+      arraycoord = [
+        resp.data.birds[i].location.longitude,
+        resp.data.birds[i].location.latitude
+      ];
       this.state.scooterMarker.push(arraycoord);
     }
 
     console.log("scooter markers state", this.state.scooterMarker);
     this.setState({ mapLocation: this.state });
-
   };
   handleToggleClose = () => {
     this.setState({
       isOpen: false
     });
-  }
+  };
   handleToggleOpen = () => {
-
     this.setState({
       isOpen: true
     });
-  }
+  };
 
   render() {
     const { mapLocation } = this.state;
