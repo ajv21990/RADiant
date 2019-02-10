@@ -1,5 +1,6 @@
 .aboutUs-card {
-  color: #3e6a97;
+  color: rgb(247, 247, 247);
+  background-color: rgb(243, 126, 84);
   text-align: center;
   padding: 5px;
 }
@@ -7,7 +8,9 @@
   font-family: "Arbutus Slab", serif;
 }
 .background-aboutUs {
-  background-color: rgb(196, 223, 233);
+  /* background-image: url("https://static1.squarespace.com/static/5191824ce4b006802d8f8adf/t/555b8e4be4b077c3c4ea1253/1432063584282/?format=2500w");
+  height: 1675px; */
+  background-color: rgb(201, 233, 245);
   height: 100%;
 }
 
@@ -16,7 +19,19 @@
 }
 .aboutUs-mission {
   text-align: center;
-  color: white;
+  color: rgb(247, 247, 247);
+  background-color: rgb(9, 26, 119);
+  opacity: 0.8;
+  padding: 5px;
+}
+.aboutUs-information-card {
+  text-align: center;
+  color: rgb(9, 26, 119);
+  background-color: rgb(9, 26, 119);
+  opacity: 0.8;
+  padding: 5px;
+}
+
   background-color: #3e6a97;
   opacity: 0.8;
   padding: 5px;
