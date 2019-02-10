@@ -7,6 +7,7 @@ import Rewards from "./rewards";
 import Home from "./home";
 import AboutUs from "./aboutUs/aboutUs";
 import ScooterLandingPage from "./scooterLandingPage";
+import Services from "./services";
 
 const Navagation = () => (
   <Router>
@@ -18,6 +19,7 @@ const Navagation = () => (
       <Route exact path="/home" component={Home} />
       <Route exact path="/aboutUs" component={AboutUs} />
       <Route exact path="/scooters" component={ScooterLandingPage} />
+      <Route exact path="/services" component={Services} />
     </div>
   </Router>
 );

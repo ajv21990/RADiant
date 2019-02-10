@@ -42,14 +42,7 @@ export default class NavBar extends React.Component {
           className="col-md-12"
         >
           <NavbarBrand>&nbsp;&nbsp;RADiant &nbsp;&nbsp;</NavbarBrand>
-          <NavbarBrand>
-            <span className="col-md-4 ml-1 mr-1">
-              -Get Where You Need To Be-
-            </span>
-            <span className="col-md-4 ml-1 mr-1">
-              -Decrease Congestion and Reduce Pollution-
-            </span>
-          </NavbarBrand>
+          <NavbarBrand> </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -58,6 +51,9 @@ export default class NavBar extends React.Component {
               </NavItem>
               <NavItem>
                 <NavLink href="/aboutUs/">About Us</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/services/">Services</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>

@@ -30,9 +30,6 @@ class AboutUsCard extends Component {
           </CardBody>
           <CardFooter />
         </Card>
-        {/* -Connect to people and places that patter most-
-              <br />
-              -Bring cities together and bring forth better urban living- */}
       </div>
     );
   }
