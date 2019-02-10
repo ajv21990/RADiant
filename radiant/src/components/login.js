@@ -27,27 +27,33 @@ export default class Login extends React.Component {
       <div className="background_login" style={{ padding: "17%" }}>
         <div>
           <h1 className="mb-4 login_title">RADiant</h1>
-          <div className="col-md-4 border rounded mx-auto login_container registration">
-            <TextInput
-              label="Email"
-              id="email"
-              type="email"
-              val={this.state.email}
-              handleChange={this.handleChange}
-            />
-            <TextInput
-              label="Password"
-              id="password"
-              type="password"
-              val={this.state.password}
-              handleChange={this.handleChange}
-            />
-            <button className=" btn btn-light mr-2 mt-3">
-              <NavLink href="/home/">Login</NavLink>
-            </button>
-            <button className=" btn btn-light ml-2 mt-3">
-              <NavLink href="/register/">Sign up</NavLink>
-            </button>
+          <div className="col-md-8 border rounded mx-auto login_container registration">
+            <form>
+              <div className="form-group">
+                <TextInput
+                  label="Email"
+                  id="email"
+                  type="email"
+                  val={this.state.email}
+                  handleChange={this.handleChange}
+                  className="form-control"
+                />
+                <TextInput
+                  label="Password"
+                  id="password"
+                  type="password"
+                  val={this.state.password}
+                  handleChange={this.handleChange}
+                  className="form-control"
+                />
+                <button className="btn btn-light">
+                  <NavLink href="/home/">Login</NavLink>
+                </button>
+                <button className=" btn btn-light">
+                  <NavLink href="/register/">Sign up</NavLink>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
