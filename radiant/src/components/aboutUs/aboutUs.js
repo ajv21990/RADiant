@@ -22,7 +22,7 @@ class AboutUs extends Component {
                 dependence on personal automobiles for transportation and leave
                 future generations with a cleaner, healthier planet by bringing
                 awarness to industry leading companies who are providing these
-                revolutionary, sharing services
+                revolutionary, sharing services.
               </p>
             </h5>
           </div>
