@@ -21,11 +21,13 @@ class AboutUsCard extends Component {
               <h2>RADiant</h2>
             </CardTitle>
             <CardText>
-              -Connect to people and places that matter most-
-              <br />
-              -Strengthen the community through urban transportation-
-              <br />
-              -Strengthen the community through urban transportation-
+              <b>
+                -Connect to people and places that matter most-
+                <br />
+                -Strengthen the community through urban transportation-
+                <br />
+                -Promote green initiatives-
+              </b>
             </CardText>
           </CardBody>
           <CardFooter />

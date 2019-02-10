@@ -69,7 +69,7 @@ export default class NavBar extends React.Component {
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    <NavLink href="/bikes/">Cars</NavLink>
+                    <NavLink href="/cars/">Cars</NavLink>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>

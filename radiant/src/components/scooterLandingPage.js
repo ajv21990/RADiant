@@ -10,7 +10,9 @@ export default class ScooterLandingPage extends React.Component {
       lat: 33.783022,
       lng: -118.112858
     },
-    scooterMarker: []
+    scooterMarker: [],
+    isOpen: false,
+    openInfoWindowMarkerId: ''
   };
   componentDidMount = () => {
     this.startLocation();
@@ -62,6 +64,17 @@ export default class ScooterLandingPage extends React.Component {
     this.setState({ mapLocation: this.state });
 
   };
+  handleToggleClose = () => {
+    this.setState({
+      isOpen: false
+    });
+  }
+  handleToggleOpen = () => {
+
+    this.setState({
+      isOpen: true
+    });
+  }
 
   render() {
     const { mapLocation } = this.state;
@@ -80,6 +93,9 @@ export default class ScooterLandingPage extends React.Component {
           containerElement={<div style={{ height: `700px` }} />}
           mapElement={<div style={{ height: `100%` }} />}
           ScooterMarker={this.state.scooterMarker}
+          isOpen={this.state.isOpen}
+          onCloseClick={this.handleToggleClose}
+          onClick={this.handleToggleOpen}
         />
       </div>
     );
