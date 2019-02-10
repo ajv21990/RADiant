@@ -5,8 +5,7 @@ import Uber from '../images/Uber.png'
 import Lyft from '../images/Lyft.png'
 import '../style/rewards.css'
 import { Label } from 'semantic-ui-react';
-import Footer from '../constants/footer'
-import Header from '../constants/header'
+
 
 
 
@@ -33,10 +32,7 @@ export default class Rewards extends React.Component {
 
         return (
             <div>
-                <Header
-                    handleClick={this.Zag}
-                />
-                <div className="bg-warning rewards_container" style={{ height: `700px` }}>
+                <div className="bg-warning rewards_container" style={{ height: `600px` }}>
 
                     <h1 className="reward_header">Reward Status</h1>
                     <div className="row mb-4">
@@ -86,7 +82,6 @@ export default class Rewards extends React.Component {
                         </div>
                     </div>
                 </div>
-                <Footer handleClick={this.rewards} />
             </div>
         )
     }
