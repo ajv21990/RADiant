@@ -1,15 +1,14 @@
-
 import React from 'react';
-import { GoogleMap, Marker, withGoogleMap, withScriptjs, InfoWindow, Circle } from 'react-google-maps';
+import { GoogleMap, Marker, withGoogleMap, withScriptjs, InfoWindow } from 'react-google-maps';
 
-class GoogleMaps extends React.Component {
+class GoogleMapsCars extends React.Component {
     render() {
         const { lat, lng, defaultCenter } = this.props;
         return (
             <GoogleMap
                 {...this.props}
                 defaultCenter={defaultCenter}
-                defaultZoom={15}>
+                defaultZoom={12}>
 
                 {this.props.isMarkerShown && <Marker
                     position={{ lat: lat, lng: lng }}
@@ -23,14 +22,14 @@ class GoogleMaps extends React.Component {
                         animation={2}
 
                     >
-                        {this.props.selectedMarker === marker &&
+                        {/* {this.props.selectedMarker === marker &&
                             <InfoWindow
                                 onCloseClick={this.props.onToggleOpen}
                             >
                                 <div>
                                     {marker.shelter}
                                 </div>
-                            </InfoWindow>}
+                            </InfoWindow>} */}
 
                     </Marker>
                 ))}
@@ -39,4 +38,4 @@ class GoogleMaps extends React.Component {
     }
 }
 
-export default withScriptjs(withGoogleMap(GoogleMaps));
+export default withScriptjs(withGoogleMap(GoogleMapsCars));

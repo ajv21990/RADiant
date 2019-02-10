@@ -1,3 +1,4 @@
+
 import React, { Component } from "react";
 import "./aboutUs.css";
 import {
@@ -21,17 +22,17 @@ class AboutUsCard extends Component {
               <h2>RADiant</h2>
             </CardTitle>
             <CardText>
-              -Connect to people and places that matter most-
-              <br />
-              -Strengthen the community through urban transportation-
+              <b>
+                -Connect to people and places that matter most-
+                <br />
+                -Strengthen the community through urban transportation-
+                <br />
+                -Promote green initiatives-
+              </b>
             </CardText>
-            <Button>button</Button>
           </CardBody>
           <CardFooter />
         </Card>
-        {/* -Connect to people and places that patter most-
-              <br />
-              -Bring cities together and bring forth better urban living- */}
       </div>
     );
   }

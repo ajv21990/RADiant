@@ -1,18 +1,21 @@
+
 import React from "react";
 import {
   GoogleMap,
   Marker,
   withGoogleMap,
-  withScriptjs
+  withScriptjs,
+  InfoWindow
 } from "react-google-maps";
 
 class GoogleMapsScooter extends React.Component {
   render() {
     const { lat, lng, defaultCenter } = this.props;
     return (
-      <GoogleMap {...this.props} defaultCenter={defaultCenter} defaultZoom={12}>
+      <GoogleMap {...this.props} defaultCenter={defaultCenter} defaultZoom={15}>
         {this.props.isScooterMarkerShown && (
-          <Marker position={{ lat: lat, lng: lng }} />
+          <Marker position={{ lat: lat, lng: lng }}
+            animation={1} />
         )}
 
 
@@ -20,9 +23,15 @@ class GoogleMapsScooter extends React.Component {
           <Marker
             key={index}
             position={{ lat: parseFloat(marker[1]), lng: parseFloat(marker[0]) }}
-            onClick={this.props.onToggleOpen}
+            // onClick={this.props.onClick}
+            animation={2}
 
           >
+            {/* {this.props.isOpen &&
+              <InfoWindow onCloseClick={this.props.onCloseClick}>
+                <span>Something</span>
+              </InfoWindow>
+            } */}
           </Marker>
         ))}
       </GoogleMap>

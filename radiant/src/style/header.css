@@ -1,46 +1,53 @@
-.header{
-    background-color: rgb(255, 177, 8);
-    padding: 2%;
-    position: sticky;
-    width: 100vw;
-    height: 125px;
-    justify-content: space-around;
+
+.header {
+  font-family: "Russo One", sans-serif;
+  background-color: rgb(255, 177, 8);
+  padding: 2%;
+  position: sticky;
+  width: 100vw;
+  height: 125px;
+  /* justify-content: space-around; */
 }
- .header a {
-    color: #3e6a97;
-    text-decoration: none;
-    font-size: 40px;
-    margin-left: 50px;
-    cursor: pointer;
-    white-space: nowrap;
-    text-decoration: none;
+.test {
+  font-family: "Russo One", sans-serif;
+  font-size: 200%;
+  color: #3e6a97;
+  background-color: rgb(255, 177, 8);
+  padding: 2%;
+  position: sticky;
+}
+.header a {
+  color: #3e6a97;
+  text-decoration: none;
+  font-size: 40px;
+  margin-left: 50px;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
 }
 
-
-.row{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-flow: row nowrap;
-    white-space: nowrap;
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+  white-space: nowrap;
 }
 
-
-ul{
-    margin-left: 120px
+ul {
+  margin-left: 120px;
 }
-.logo{
-    width: auto;
-    height: 90px;
-    margin-left: -20px;
+.logo {
+  width: auto;
+  height: 90px;
+  margin-left: -20px;
 }
-img{
-    padding-bottom: 20px
-}
-
-.headerLink:hover{
-    background-color: rgb(209, 143, 2);
-    padding-top: 2%;
-    padding-bottom: 2%;
+img {
+  padding-bottom: 20px;
 }
 
+.headerLink:hover {
+  background-color: rgb(221, 192, 131);
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
