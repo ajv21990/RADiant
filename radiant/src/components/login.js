@@ -3,6 +3,7 @@ import TextInput from "../constants/textInput";
 import "../style/login.css";
 import { NavLink } from "reactstrap";
 import lbc from '../images/lbc.jpg';
+import radlogo from '../images/radlogo.png';
 
 export default class Login extends React.Component {
   constructor(props) {
@@ -28,14 +29,16 @@ export default class Login extends React.Component {
       <div className="container-fluid p-0" id="background_login">
         <br />
         <div className="row">
-          <div className="col-md-4 my-5 logoDiv">
-            <h1 className="login_title">RADiant</h1>
+          <div className="col-md-4 my-5 d-flex justify-contents-center logoDiv">
+            <img className="img-fluid m-auto" width="450px" src={radlogo} alt="RADiant" />
           </div>
         </div>
         <br />
         <div className="row">
           <div className="col-md-4 formDiv">
-            <form className="rounded m-auto login_container registration">
+            <form className="border rounded m-auto login_container registration">
+              <h1 className="mb-4 login_title">Login</h1>
+              <hr />
               <TextInput
                 label="Email"
                 id="email"
@@ -43,7 +46,7 @@ export default class Login extends React.Component {
                 val={this.state.email}
                 handleChange={this.handleChange}
                 placeholder="Enter email address"
-                />
+              />
               <TextInput
                 label="Password"
                 id="password"
@@ -51,7 +54,7 @@ export default class Login extends React.Component {
                 val={this.state.password}
                 handleChange={this.handleChange}
                 placeholder="Enter password"
-                />
+              />
               <div className="row">
                 <button className="btn btn-sm m-2 btn-primary btn-block">
                   <NavLink className="text-warning" href="/home/"><strong>Login</strong></NavLink>
