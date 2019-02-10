@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Login from "./login";
 import Register from "./register";
 import BikeLandingPage from "./landingPage";
-import Home from "./home";
+import NavbarLanding from "./home";
 import AboutUs from "./aboutUs/aboutUs";
 import ScooterLandingPage from "./scooterLandingPage";
 import Carpage from './carLand'
@@ -16,7 +16,7 @@ const Navagation = () => (
       <Route exact path="/" component={Login} />
       <Route exact path="/register" component={Register} />
       <Route exact path="/bikes" component={BikeLandingPage} />
-      <Route exact path="/home" component={Home} />
+      <Route exact path="/home" component={NavbarLanding} />
       <Route exact path="/aboutUs" component={AboutUs} />
       <Route exact path="/scooters" component={ScooterLandingPage} />
       <Route exact path="/services" component={Services} />
