@@ -28,7 +28,7 @@ export default class Register extends React.Component {
       <div className="background_login" style={{ padding: "10%" }}>
         <div>
           <h1 className="mb-4 login_title">Register</h1>
-          <div className="col-md-4 border rounded mx-auto login_container registration">
+          <div className="col-md-8 border rounded mx-auto login_container registration">
             <TextInput
               label="First Name"
               id="firstName"
@@ -64,10 +64,10 @@ export default class Register extends React.Component {
               val={this.state.confirmPass}
               handleChange={this.handleChange}
             />
-            <button className=" btn btn-light mr-2 mt-3">
+            <button className=" btn btn-light mt-3 float-right">
               <NavLink href="/home/">Register</NavLink>
             </button>
-            <button className=" btn btn-light ml-2 mt-3">
+            <button className=" btn btn-light  mt-3">
               <NavLink href="/">Cancel</NavLink>
             </button>
           </div>

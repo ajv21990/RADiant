@@ -46,10 +46,10 @@ export default class Login extends React.Component {
                   handleChange={this.handleChange}
                   className="form-control"
                 />
-                <button className="btn btn-light">
+                <button className="btn btn-light float-right mt-2">
                   <NavLink href="/home/">Login</NavLink>
                 </button>
-                <button className=" btn btn-light">
+                <button className=" btn btn-light mt-2">
                   <NavLink href="/register/">Sign up</NavLink>
                 </button>
               </div>
