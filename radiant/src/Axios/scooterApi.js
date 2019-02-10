@@ -1,8 +1,9 @@
+
 import axios from "axios";
 
 const locations = {
-  latitude: 33.77005,
-  longitude: -118.193741,
+  latitude: 33.7838,
+  longitude: -118.1141,
   altitude: 500,
   accuracy: 100,
   speed: -1,
@@ -14,7 +15,7 @@ class ScooterApi {
   static GetAllScooterLocations(onGetScooterSuccess, onGetScooterError) {
     axios
       .get(
-        "https://api.bird.co/bird/nearby?latitude=33.770050&longitude=-118.193741&radius=5000",
+        "https://api.bird.co/bird/nearby?latitude=33.7838&longitude=-118.1141&radius=5000",
 
         {
           //   headers: headers
