@@ -36,24 +36,19 @@ const navbarLanding = props => {
           <div className="collapse navbar-collapse" id="myNavbar">
             <ul className="navbar-nav mx-auto">
               <li className="nav-item mr-4 active">
-                <a className="nav-link" href="/">
+                <NavLink className="nav-link" href="/home/">
                   Home
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item mx-4">
-                <a className="nav-link" href="/">
+                <NavLink className="nav-link" href="/aboutUs/">
                   About
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item mx-4">
-                <a className="nav-link" href="/">
+                <NavLink className="nav-link" href={"/services/"}>
                   Services
-                </a>
-              </li>
-              <li className="nav-item ml-4">
-                <a className="nav-link" href="/">
-                  Contact
-                </a>
+                </NavLink>
               </li>
             </ul>
             <ul className="navbar-nav nav-right">
