@@ -1,9 +1,7 @@
-
 import React, { Component } from "react";
 import "./aboutUs.css";
 import {
   Card,
-  Button,
   CardHeader,
   CardFooter,
   CardBody,

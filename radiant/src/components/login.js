@@ -2,8 +2,8 @@ import React from "react";
 import TextInput from "../constants/textInput";
 import "../style/login.css";
 import { NavLink } from "reactstrap";
-import lbc from '../images/lbc.jpg';
-import radlogo from '../images/radlogo.png';
+import lbc from "../images/lbc.jpg";
+import radlogo from "../images/radlogo.png";
 
 export default class Login extends React.Component {
   constructor(props) {
@@ -30,7 +30,12 @@ export default class Login extends React.Component {
         <br />
         <div className="row">
           <div className="col-md-4 my-5 d-flex justify-contents-center logoDiv">
-            <img className="img-fluid m-auto" width="450px" src={radlogo} alt="RADiant" />
+            <img
+              className="img-fluid m-auto"
+              width="450px"
+              src={radlogo}
+              alt="RADiant"
+            />
           </div>
         </div>
         <br />
@@ -57,18 +62,20 @@ export default class Login extends React.Component {
               />
               <div className="row">
                 <button className="btn btn-sm m-2 btn-primary btn-block">
-                  <NavLink className="text-warning" href="/home/"><strong>Login</strong></NavLink>
+                  <NavLink className="text-warning" href="/home/">
+                    <strong>Login</strong>
+                  </NavLink>
                 </button>
                 <button className="btn btn-sm m-2 btn-primary btn-block">
-                  <NavLink className="text-warning" href="/register/"><strong>Sign up</strong></NavLink>
+                  <NavLink className="text-warning" href="/register/">
+                    <strong>Sign up</strong>
+                  </NavLink>
                 </button>
               </div>
             </form>
           </div>
         </div>
       </div>
-
     );
   }
 }
-

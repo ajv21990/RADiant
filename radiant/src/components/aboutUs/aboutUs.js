@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 import "./aboutUs.css";
 import AboutUsCarousel from "./aboutUsCarousel";
@@ -12,12 +11,17 @@ class AboutUs extends Component {
       <div className="background-aboutUs">
         <NavBar />
         <div className="aboutUs">
-          <div className="aboutUs-card offset-5 col-md-2 mt-3 mb-3">
-            <h1>About Us</h1>
+          <div className="aboutUs-card mt-3 mb-3">
+            <h1 className="col-md-12" style={{ textAlign: "center" }}>
+              About Us
+            </h1>
           </div>
           <div>
-            <h5 className="aboutUs-mission col-md-10 offset-1 mb-4">
-              <p className="col-md-10 offset-1">
+            <h5
+              className="aboutUs-mission col-md-10 offset-1 mb-4"
+              style={{ textAlign: "center" }}
+            >
+              <p className="col-md-12 ">
                 Through the equitable distribution of shared scooters, bikes,
                 cars, and other transit vehicles, Radiant aims to reduce
                 dependence on personal automobiles for transportation and leave
@@ -97,4 +101,3 @@ class AboutUs extends Component {
 }
 
 export default AboutUs;
-

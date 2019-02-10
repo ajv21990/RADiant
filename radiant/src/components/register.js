@@ -2,7 +2,7 @@ import React from "react";
 import TextInput from "../constants/textInput";
 import "../style/login.css";
 import { NavLink } from "reactstrap";
-import radlogo from '../images/radlogo.png';
+import radlogo from "../images/radlogo.png";
 
 export default class Register extends React.Component {
   constructor(props) {
@@ -29,7 +29,12 @@ export default class Register extends React.Component {
       <div className="container-fluid p-0" id="background_login">
         <div className="row">
           <div className="col-md-4 d-flex justify-contents-center logoDiv">
-            <img className="img-fluid m-auto" width="450px" src={radlogo} alt="RADiant" />
+            <img
+              className="img-fluid m-auto"
+              width="450px"
+              src={radlogo}
+              alt="RADiant"
+            />
           </div>
         </div>
         <div>
@@ -78,10 +83,14 @@ export default class Register extends React.Component {
             />
             <div className="row">
               <button className="btn btn-sm m-2 btn-primary btn-block">
-                <NavLink className="text-warning" href="/home/"><strong>Register</strong></NavLink>
+                <NavLink className="text-warning" href="/home/">
+                  <strong>Register</strong>
+                </NavLink>
               </button>
               <button className="btn btn-sm m-2 btn-primary btn-block">
-                <NavLink className="text-warning" href="/"><strong>Cancel</strong></NavLink>
+                <NavLink className="text-warning" href="/">
+                  <strong>Cancel</strong>
+                </NavLink>
               </button>
             </div>
           </div>
