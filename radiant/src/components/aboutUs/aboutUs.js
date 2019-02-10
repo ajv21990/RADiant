@@ -1,3 +1,4 @@
+
 import React, { Component } from "react";
 import "./aboutUs.css";
 import AboutUsCarousel from "./aboutUsCarousel";
@@ -100,3 +101,4 @@ class AboutUs extends Component {
   }
 }
 export default AboutUs;
+

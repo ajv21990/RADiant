@@ -1,3 +1,4 @@
+
 import React, { Component } from "react";
 
 class AboutUsExamples extends Component {
@@ -16,7 +17,7 @@ class AboutUsExamples extends Component {
             width="auto"
             height="250"
             src="https://www.youtube.com/embed/j5UL-GMCF9k"
-            frameborder="10"
+            frameBorder="10"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             className="col-md-4"
@@ -26,7 +27,7 @@ class AboutUsExamples extends Component {
             width="auto"
             height="250"
             src="https://www.youtube.com/embed/XqO_FkX6PlU"
-            frameborder="10"
+            frameBorder="10"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             className="col-md-4"
@@ -36,7 +37,7 @@ class AboutUsExamples extends Component {
             width="auto"
             height="250"
             src="https://www.youtube.com/embed/VGsFEVZbmwI"
-            frameborder="10"
+            frameBorder="10"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             className="col-md-4"
