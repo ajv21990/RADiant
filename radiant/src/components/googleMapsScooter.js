@@ -4,8 +4,7 @@ import {
   GoogleMap,
   Marker,
   withGoogleMap,
-  withScriptjs,
-  InfoWindow
+  withScriptjs
 } from "react-google-maps";
 
 class GoogleMapsScooter extends React.Component {
@@ -14,25 +13,18 @@ class GoogleMapsScooter extends React.Component {
     return (
       <GoogleMap {...this.props} defaultCenter={defaultCenter} defaultZoom={15}>
         {this.props.isScooterMarkerShown && (
-          <Marker position={{ lat: lat, lng: lng }}
-            animation={1} />
+          <Marker position={{ lat: lat, lng: lng }} animation={1} />
         )}
-
 
         {this.props.ScooterMarker.map((marker, index) => (
           <Marker
             key={index}
-            position={{ lat: parseFloat(marker[1]), lng: parseFloat(marker[0]) }}
-            // onClick={this.props.onClick}
+            position={{
+              lat: parseFloat(marker[1]),
+              lng: parseFloat(marker[0])
+            }}
             animation={2}
-
-          >
-            {/* {this.props.isOpen &&
-              <InfoWindow onCloseClick={this.props.onCloseClick}>
-                <span>Something</span>
-              </InfoWindow>
-            } */}
-          </Marker>
+          />
         ))}
       </GoogleMap>
     );

@@ -31,7 +31,12 @@ class Services extends Component {
         <div className="grid-container">
           <div className="item2">
             <figure>
-              <a href="https://www.li.me/ " target="_blank" className="bounce">
+              <a
+                href="https://www.li.me/ "
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bounce"
+              >
                 <img src={lime} alt="Lime" width="200px" height="auto" />
                 <figcaption>Lime (Scooters)</figcaption>
               </a>
@@ -42,6 +47,7 @@ class Services extends Component {
               <a
                 href="https://www.bird.co/ "
                 target="_blank"
+                rel="noopener noreferrer"
                 className="bounce"
               >
                 <img src={bird} alt="bird" width="200px" height="auto" />
@@ -54,6 +60,7 @@ class Services extends Component {
               <a
                 href="http://loopscooters.com/  "
                 target="_blank"
+                rel="noopener noreferrer"
                 className="bounce mt-4"
               >
                 <img
@@ -72,6 +79,7 @@ class Services extends Component {
               <a
                 href="https://www.spin.app/ "
                 target="_blank"
+                rel="noopener noreferrer"
                 className="bounce"
               >
                 <img src={spin} alt="spin" width="200px" height="auto" />
@@ -84,6 +92,7 @@ class Services extends Component {
               <a
                 href="https://skipscooters.com/ "
                 target="_blank"
+                rel="noopener noreferrer"
                 className="bounce"
               >
                 <img src={skip} alt="skip" width="200px" height="auto" />
@@ -96,6 +105,7 @@ class Services extends Component {
               <a
                 href="https://bikeshare.metro.net/ "
                 target="_blank"
+                rel="noopener noreferrer"
                 className="bounce"
               >
                 <img
@@ -113,6 +123,7 @@ class Services extends Component {
               <a
                 href="https://www.longbeachbikeshare.com/ "
                 target="_blank"
+                rel="noopener noreferrer"
                 className="bounce"
               >
                 <img
@@ -127,7 +138,12 @@ class Services extends Component {
           </div>
           <div className="item7">
             <figure>
-              <a href="https://www.li.me/ " target="_blank" className="bounce">
+              <a
+                href="https://www.li.me/ "
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bounce"
+              >
                 <img
                   src={limeBikes}
                   alt="Lime Bikes"
@@ -143,6 +159,7 @@ class Services extends Component {
               <a
                 href="https://santamonicabikeshare.com/ "
                 target="_blank"
+                rel="noopener noreferrer"
                 className="bounce"
               >
                 <img src={breeze} alt="Breeze" width="200px" height="auto" />
@@ -155,6 +172,7 @@ class Services extends Component {
               <a
                 href="https://help.socialbicycles.com/hc/en-us "
                 target="_blank"
+                rel="noopener noreferrer"
                 className="bounce"
               >
                 <img src={sobi} alt="Sobi" width="200px" height="auto" />
@@ -167,6 +185,7 @@ class Services extends Component {
               <a
                 href="https://www.uber.com/  "
                 target="_blank"
+                rel="noopener noreferrer"
                 className="bounce"
               >
                 <img src={uber} alt="uber" width="200px" height="auto" />
@@ -179,6 +198,7 @@ class Services extends Component {
               <a
                 href="https://www.lyft.com/ "
                 target="_blank"
+                rel="noopener noreferrer"
                 className="bounce"
               >
                 <img src={lyft} alt="lyft" width="200px" height="auto" />
@@ -188,7 +208,12 @@ class Services extends Component {
           </div>
           <div className="item2">
             <figure>
-              <a href="https://turo.com/ " target="_blank" className="bounce">
+              <a
+                href="https://turo.com/ "
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bounce"
+              >
                 <img src={turo} alt="Turo" width="200px" height="auto" />
                 <figcaption>Turo</figcaption>
               </a>
@@ -199,6 +224,7 @@ class Services extends Component {
               <a
                 href="https://www.getaround.com/ "
                 target="_blank"
+                rel="noopener noreferrer"
                 className="bounce"
               >
                 <img
@@ -216,6 +242,7 @@ class Services extends Component {
               <a
                 href="https://www.envoythere.com/ "
                 target="_blank"
+                rel="noopener noreferrer"
                 className="bounce"
               >
                 <img
@@ -233,6 +260,7 @@ class Services extends Component {
               <a
                 href="https://www.waivecar.com/  "
                 target="_blank"
+                rel="noopener noreferrer"
                 className="bounce"
               >
                 <img src={waive} alt="Waive" width="200px" height="auto" />

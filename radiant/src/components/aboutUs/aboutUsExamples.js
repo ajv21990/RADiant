@@ -21,6 +21,7 @@ class AboutUsExamples extends Component {
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             className="col-md-4"
+            title="title"
           />
           <iframe
             width="auto"
@@ -30,6 +31,7 @@ class AboutUsExamples extends Component {
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             className="col-md-4"
+            title="title"
           />
           <iframe
             width="auto"
@@ -39,6 +41,7 @@ class AboutUsExamples extends Component {
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             className="col-md-4"
+            title="title"
           />
         </div>
       </div>
