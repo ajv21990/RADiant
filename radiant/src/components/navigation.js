@@ -6,8 +6,8 @@ import BikeLandingPage from "./landingPage";
 import Home from "./home";
 import AboutUs from "./aboutUs/aboutUs";
 import ScooterLandingPage from "./scooterLandingPage";
-import Carpage from './carLand'
-import WhatsNext from './whatsNext'
+import Carpage from "./carLand";
+import WhatsNext from "./whatsNext";
 import Services from "./services";
 
 const Navagation = () => (
@@ -21,9 +21,7 @@ const Navagation = () => (
       <Route exact path="/scooters" component={ScooterLandingPage} />
       <Route exact path="/services" component={Services} />
       <Route exact path="/cars" component={Carpage} />
-      <Route exact path="/next" component={WhatsNext} />
-
-
+      <Route exact path="/upcoming" component={WhatsNext} />
     </div>
   </Router>
 );

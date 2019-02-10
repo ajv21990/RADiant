@@ -45,7 +45,7 @@ export default class LandingPage extends React.Component {
   };
 
   ZagSuccess = resp => {
-    console.log("Success Get", resp);
+    // console.log("Success Get", resp);
 
     for (let i = 0; i < resp.data.features.length; i++) {
       // this.setState({

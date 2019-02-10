@@ -9,21 +9,21 @@ import {
 
 const items = [
   {
-    src: "https://s.hdnux.com/photos/72/64/75/15421284/6/920x920.jpg"
-    // altText: 'Slide 1',
-    // caption: 'Slide 1'
+    src: "https://s.hdnux.com/photos/72/64/75/15421284/6/920x920.jpg",
+    altText: "",
+    caption: ""
   },
   {
     src:
-      "https://www.kansascity.com/latest-news/uwnhpk/picture222316900/alternates/LANDSCAPE_1140/RideKCBike.jpg"
-    // altText: 'Slide 1',
-    // caption: 'Slide 1'
+      "https://www.kansascity.com/latest-news/uwnhpk/picture222316900/alternates/LANDSCAPE_1140/RideKCBike.jpg",
+    altText: "",
+    caption: ""
   },
   {
     src:
-      "https://nextjuggernaut.com/wp-content/uploads/2016/03/getaround-fiat-small.jpg"
-    // altText: 'Slide 1',
-    // caption: 'Slide 1'
+      "https://nextjuggernaut.com/wp-content/uploads/2016/03/getaround-fiat-small.jpg",
+    altText: "",
+    caption: ""
   }
 ];
 

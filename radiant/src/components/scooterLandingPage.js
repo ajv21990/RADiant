@@ -49,7 +49,7 @@ export default class ScooterLandingPage extends React.Component {
   };
 
   onGetScooterSuccess = resp => {
-    console.log("Success Get scooters", resp);
+    // console.log("Success Get scooters", resp);
 
     let arraycoord = [];
 
@@ -61,7 +61,7 @@ export default class ScooterLandingPage extends React.Component {
       this.state.scooterMarker.push(arraycoord);
     }
 
-    console.log("scooter markers state", this.state.scooterMarker);
+    // console.log("scooter markers state", this.state.scooterMarker);
     this.setState({ mapLocation: this.state });
   };
   handleToggleClose = () => {
