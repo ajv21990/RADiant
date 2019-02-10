@@ -1,19 +1,17 @@
 import React from "react";
-import GoogleMaps from "../components/googleMaps";
+import GoogleMapsScooter from "./googleMapsScooter";
 import Header from "../constants/header";
-import ZagApi from "../Axios/API/zagsterAPI";
-import Footer from "../constants/footer";
-import { InfoWindow } from "react-google-maps";
+import ScooterApi from "../Axios/scooterApi";
 import NavBar from "./navBar";
 
-export default class LandingPage extends React.Component {
+export default class ScooterLandingPage extends React.Component {
   state = {
     mapLocation: {
       lat: 33.783022,
       lng: -118.112858
     },
-    markers: [],
-    labels: "label"
+    labels: "label",
+    scooterMarker: []
   };
   componentDidMount = () => {
     this.startLocation();
@@ -36,29 +34,26 @@ export default class LandingPage extends React.Component {
     this.setState({ mapLocation: this.state });
   };
   error = err => console.warn(`ERROR(${err.code}): ${err.message}`);
-  Zag = () => {
-    ZagApi.Zag(this.ZagSuccess, this.ZagError);
+
+  getAllScooterLocations = () => {
+    ScooterApi.GetAllScooterLocations(
+      this.onGetScooterSuccess,
+      this.onGetScooterError
+    );
   };
 
-  ZagError = resp => {
+  onGetScooterError = resp => {
     console.log("Failed to get", resp);
   };
 
-  ZagSuccess = resp => {
-    console.log("Success Get", resp);
+  onGetScooterSuccess = resp => {
+    console.log("Success Get scooters", resp);
 
-    for (let i = 0; i < resp.data.features.length; i++) {
-      // this.setState({
-      //     markers: resp.data.features[i].geometry.coordinates
-      // })
-      this.state.markers.push(resp.data.features[i].geometry.coordinates);
+    for (let i = 0; i < resp.data.birds.length; i++) {
+      this.state.scooterMarker.push(resp.data.birds[i].location);
     }
 
-    console.log("markers state", this.state.markers);
-  };
-
-  rewards = () => {
-    this.props.history.push("/rewards");
+    console.log("scooter markers state", this.state.scooterMarker);
   };
 
   render() {
@@ -66,9 +61,11 @@ export default class LandingPage extends React.Component {
     return (
       <div>
         <NavBar />
-        <Header handleClick={this.Zag} />
-        <GoogleMaps
+        <Header handleClickScooters={this.getAllScooterLocations} />
+
+        <GoogleMapsScooter
           isMarkerShown
+          isScooterMarkerShown
           defaultCenter={mapLocation}
           lat={mapLocation.lat}
           lng={mapLocation.lng}
@@ -79,7 +76,6 @@ export default class LandingPage extends React.Component {
           markers={this.state.markers}
           MarkerLabel={this.state.labels}
         />
-        <Footer handleClick={this.rewards} />
       </div>
     );
   }
