@@ -18,7 +18,9 @@ export default class LandingPage extends React.Component {
 
     }
     componentDidMount = () => {
-        this.startLocation()
+        this.startLocation();
+        this.Zag()
+        this.Zag()
     }
 
     startLocation = () => {
@@ -61,6 +63,8 @@ export default class LandingPage extends React.Component {
 
         }
         console.log("markers state", this.state.markers[1])
+        this.setState({ mapLocation: this.state });
+
     }
 
     rewards = () => {
