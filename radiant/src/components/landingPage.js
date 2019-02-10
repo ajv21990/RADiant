@@ -1,10 +1,10 @@
-import React from 'react'
-import GoogleMaps from '../components/googleMaps'
-import Header from '../constants/header'
-import ZagApi from '../Axios/API/zagsterAPI'
-import Footer from '../constants/footer'
-import { InfoWindow } from 'react-google-maps'
-
+import React from "react";
+import GoogleMaps from "../components/googleMaps";
+import Header from "../constants/header";
+import ZagApi from "../Axios/API/zagsterAPI";
+import Footer from "../constants/footer";
+import { InfoWindow } from "react-google-maps";
+import NavBar from "./navBar";
 
 export default class LandingPage extends React.Component {
     state = {

@@ -53,6 +53,24 @@ export default class NavBar extends React.Component {
               <NavItem>
                 <NavLink href="/landing/">Home</NavLink>
               </NavItem>
+              <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle nav caret>
+                  Options
+                </DropdownToggle>
+                <DropdownMenu right>
+                  <DropdownItem>
+                    <NavLink href="//">Scooters</NavLink>
+                  </DropdownItem>
+                  <DropdownItem divider />
+                  <DropdownItem>
+                    <NavLink href="/landing/">Bikes</NavLink>
+                  </DropdownItem>
+                  <DropdownItem divider />
+                  <DropdownItem>
+                    <NavLink href="//">Cars</NavLink>
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
               <NavItem>
                 <NavLink href="/">Logout</NavLink>
               </NavItem>
