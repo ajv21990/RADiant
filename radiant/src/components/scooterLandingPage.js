@@ -10,11 +10,13 @@ export default class ScooterLandingPage extends React.Component {
       lat: 33.783022,
       lng: -118.112858
     },
-    labels: "label",
     scooterMarker: []
   };
   componentDidMount = () => {
     this.startLocation();
+    this.getAllScooterLocations()
+
+
   };
 
   startLocation = () => {
@@ -49,11 +51,16 @@ export default class ScooterLandingPage extends React.Component {
   onGetScooterSuccess = resp => {
     console.log("Success Get scooters", resp);
 
+    let arraycoord = []
+
     for (let i = 0; i < resp.data.birds.length; i++) {
-      this.state.scooterMarker.push(resp.data.birds[i].location);
+      arraycoord = [resp.data.birds[i].location.longitude, resp.data.birds[i].location.latitude]
+      this.state.scooterMarker.push(arraycoord);
     }
 
     console.log("scooter markers state", this.state.scooterMarker);
+    this.setState({ mapLocation: this.state });
+
   };
 
   render() {
@@ -64,7 +71,6 @@ export default class ScooterLandingPage extends React.Component {
         <Header handleClickScooters={this.getAllScooterLocations} />
 
         <GoogleMapsScooter
-          isMarkerShown
           isScooterMarkerShown
           defaultCenter={mapLocation}
           lat={mapLocation.lat}
@@ -73,8 +79,7 @@ export default class ScooterLandingPage extends React.Component {
           loadingElement={<div style={{ height: `100%` }} />}
           containerElement={<div style={{ height: `700px` }} />}
           mapElement={<div style={{ height: `100%` }} />}
-          markers={this.state.markers}
-          MarkerLabel={this.state.labels}
+          ScooterMarker={this.state.scooterMarker}
         />
       </div>
     );

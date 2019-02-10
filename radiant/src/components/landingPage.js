@@ -11,10 +11,12 @@ export default class LandingPage extends React.Component {
       lng: -118.112858
     },
     markers: [],
-    labels: "label"
+    selectedMarker: false
   };
   componentDidMount = () => {
     this.startLocation();
+    this.Zag();
+    this.Zag();
   };
 
   startLocation = () => {
@@ -46,14 +48,27 @@ export default class LandingPage extends React.Component {
     console.log("Success Get", resp);
 
     for (let i = 0; i < resp.data.features.length; i++) {
-      this.state.markers.push(resp.data.features[i].geometry.coordinates);
+      // this.setState({
+      //     markers: resp.data.features[i].geometry.coordinates
+      // })
+      this.state.markers.push(
+        resp.data.features[i].geometry.coordinates,
+        resp.data.features[i].properties.NAME,
+        resp.data.features[i].properties.URL
+      );
+      // this.state.markers.push(resp.data.features[i].properties.NAME)
+      // this.state.markers.push(resp.data.features[i].properties.URL)
     }
-
-    console.log("markers state", this.state.markers);
+    console.log("markers state", this.state.markers[1]);
+    this.setState({ mapLocation: this.state });
   };
 
   rewards = () => {
     this.props.history.push("/rewards");
+  };
+
+  closeWindow = (marker, event) => {
+    this.setState({ selectedMarker: marker });
   };
 
   render() {
@@ -63,6 +78,7 @@ export default class LandingPage extends React.Component {
         <NavBar />
         <Header handleClick={this.Zag} />
         <GoogleMaps
+          selectedMarker={this.state.selectedMarker}
           isMarkerShown
           defaultCenter={mapLocation}
           lat={mapLocation.lat}
@@ -73,6 +89,7 @@ export default class LandingPage extends React.Component {
           mapElement={<div style={{ height: `100%` }} />}
           markers={this.state.markers}
           MarkerLabel={this.state.labels}
+          onToggleOpen={this.closeWindow}
         />
       </div>
     );
